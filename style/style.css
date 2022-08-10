@@ -92,7 +92,7 @@ blockquote {
 
 .grid-box-daniel {
   background-color: var(--Moderateviolet);
-  background-image: url('/images/bg-pattern-quotation.svg');
+  background-image: url('./images/bg-pattern-quotation.svg');
   background-repeat: no-repeat;
   background-position: 76% 3%;
   grid-row: 1;
@@ -229,8 +229,12 @@ blockquote {
     grid-row: 3;
   }
 
+  .grid-box-jeanette h4 {
+    width: 250px;
+  }
+
   .grid-box-jeanette blockquote {
-    max-width: 350px;
+    max-width: 360px;
   }
 
   .grid-box-patrick {
