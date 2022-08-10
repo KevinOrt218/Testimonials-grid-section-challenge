@@ -42,7 +42,11 @@ blockquote {
 }
 
 .grid {
-  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
 }
 
 .grid-container {
@@ -90,9 +94,13 @@ blockquote {
   border: 2.5px solid rgba(255, 255, 255, 0.45);
 }
 
+.grid-box-patrick img{
+  border: 2.5px solid rgba(136, 10, 181, 0.45);
+}
+
 .grid-box-daniel {
   background-color: var(--Moderateviolet);
-  background-image: url('./images/bg-pattern-quotation.svg');
+  background-image: url('../images/bg-pattern-quotation.svg');
   background-repeat: no-repeat;
   background-position: 76% 3%;
   grid-row: 1;
@@ -124,7 +132,6 @@ blockquote {
 }
 
 .grid-box-kira p:first-child {
-  font-weight: 800;
   color: #48556a;
 }
 
@@ -150,7 +157,6 @@ blockquote {
 }
 
 .grid-box-jeanette p:first-child {
-  font-weight: 800;
   color: #48556a;
 }
 
@@ -193,6 +199,11 @@ blockquote {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .grid{
+    height: auto;
+  }
+
   .grid-container{
     grid-template-columns: 1fr;
   }
@@ -239,5 +250,10 @@ blockquote {
 
   .grid-box-patrick {
     grid-row: 4;
+  }
+
+  .attribution {
+    font-size: 1rem;
+    padding-top: 10px;
   }
 }
